@@ -35,8 +35,8 @@ class FiguresController < ApplicationController
   end
 
 
-  post '/figures/:id' do
-    binding.pry
+  patch '/figures/:id' do
+    # binding.pry
     @figure = Figure.find(params[:id])
     @figure.update(params[:figure])
 
