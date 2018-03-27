@@ -31,8 +31,4 @@ class LandmarksController < ApplicationController
       redirect :"/landmarks/#{@landmark.id}"
     end
 
-    delete '/landmarks/:id' do
-
-    end
-
 end
